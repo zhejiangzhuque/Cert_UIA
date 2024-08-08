@@ -1,0 +1,21 @@
+seed: 1234
+model_name: F_model
+inp_size: 3
+sample_num: 100
+sampler:
+  hidden_size: 256
+model:
+  hidden_size: 128
+training:
+  n_epoch: 50
+  batch_size: 32
+  lr_F: 0.001
+  lr_p: 0.001
+data:
+  dataset: PROTEINS
+  path: ./datasets
+  train_rate: 0.8
+  pad_feat: 0
+output_dir: ./output/pretrain_F
+device: "cuda:0"
+load: ./output/train_gcn/PROTEINS/checkpoints/model.pt

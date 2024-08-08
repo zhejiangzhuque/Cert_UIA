@@ -1,0 +1,19 @@
+seed: 1234
+model_name: UInj
+sampler:
+  hidden_size: 256
+model:
+  hidden_size: 128
+training:
+  n_epoch: 100
+  batch_size: 32
+data:
+  dataset: PROTEINS
+  path: ./datasets
+  train_rate: 0.8
+  pad_feat: 0
+output_dir: ./output/train_uinj
+device: "cuda:0"
+load: ./output/pretrain_F/PROTEINS/checkpoints/F_model.pt
+test:
+  load: best.pt

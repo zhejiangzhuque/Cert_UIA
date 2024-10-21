@@ -30,3 +30,14 @@ python main.py
 ```
 
 ## Cite
+#### If you find that this code is useful for your research, please cite our paper:
+```
+@inproceedings{certuia,
+  title={Exploring Robustness of GNN against Universal Injection Attack from a Worst-case Perspective},
+  author={Dandan Ni and Sheng Zhang and Cong Deng and Han Liu and Gang Chen and Minhao Cheng and Hongyang Chen.},
+  journal={Proceedings of the 33th ACM International Conference on Information and Knowledge Management},      
+  series={CIKM'24},
+  selected = true,
+  year={2024}
+}
+```
